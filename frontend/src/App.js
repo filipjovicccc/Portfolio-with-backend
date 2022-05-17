@@ -1,14 +1,17 @@
 import "./App.css";
-import Home from "./Home";
-import Modal from "./Modal";
-import Sidebar from "./Sidebar";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-//position fixed
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
