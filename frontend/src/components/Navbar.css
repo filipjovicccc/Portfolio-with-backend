@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgb(3, 3, 33);
+    background-color:rgba(0, 0, 0, 0.998);
     height: 6em;
     display: flex;
     justify-content: start;
@@ -13,7 +13,7 @@
     background: none;
 }
 .nav-menu {
-    background-color: rgb(3, 3, 33);
+    background-color:   rgba(0, 0, 0, 0.998);
     width: 18em;
     height:100vh;
     margin-top: 90px;
@@ -22,7 +22,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    transition: 850ms
+    transition: 850ms;
 }
 
 .nav-menu.active{
@@ -61,7 +61,7 @@
 }
 
 .navbar-toggle {
-    background-color: rgb(3, 3, 33);
+    background-color: rgba(0, 0, 0, 0.998);
     width: 100%;
     height: 6em;
     display: flex;
