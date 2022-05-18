@@ -17,20 +17,6 @@ width:390px;
 }
 
 
-.section{
-    margin:auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.section img {
-    width: 200px;
-    height: 100px
-}
-
 .container{
     display: flex;
     width: 65em;
@@ -39,8 +25,7 @@ width:390px;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-   margin-left: 7em;
-    margin-top: 3em;
+    margin: 5em 0em 20em 10em; 
     background-color: rgba(0, 0, 0, 0.998);
     color: white;
     border-radius: 50% 0 0 50%;

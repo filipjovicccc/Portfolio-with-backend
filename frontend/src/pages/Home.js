@@ -1,9 +1,6 @@
 import React from "react";
 import image1 from "../assets/profile.jpg";
-import image2 from "../assets/html.png";
-import image3 from "../assets/css.png";
-import image4 from "../assets/JavaScript-Logo.jpg";
-import image5 from "../assets/react.jpg";
+
 import "./Home.css";
 
 function Home() {
@@ -12,9 +9,9 @@ function Home() {
       <main className="container">
         <h1>F.J</h1>
         <div className="wrapp">
-          <article className="article">
+          <div className="article">
             <img src={image1} alt="" />
-          </article>
+          </div>
 
           <p>
             Hello, i am Filip Jovic, web-developer from Serbia <br />
@@ -24,13 +21,6 @@ function Home() {
           </p>
         </div>
       </main>
-
-      <section className="section">
-        {/* <img src={image2} alt="html" />
-        <img src={image3} alt="css" />
-        <img src={image4} alt="js" />
-        <img src={image5} alt="js" /> */}
-      </section>
     </div>
   );
 }
