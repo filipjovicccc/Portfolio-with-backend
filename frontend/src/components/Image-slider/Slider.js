@@ -1,71 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
-import data from "./data";
-import "./Slider.css";
+import React from "react";
+import tech from "./data";
+import image3 from "../../assets/react.jpg";
+
 function Slider() {
-  const [people, setPeople] = useState(data);
-  const [index, setIndex] = React.useState(0);
-
-  useEffect(() => {
-    const lastIndex = people.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, people]);
-
-  //   useEffect(() => {
-  //     let slider = setInterval(() => {
-  //       setIndex(index + 1);
-  //     }, 5000);
-  //     return () => {
-  //       clearInterval(slider);
-  //     };
-  //   }, [index]);
-
   return (
-    <section className="section">
-      <div className="title">
-        <h2>
-          <span>/</span>reviews
-        </h2>
-      </div>
-      <div className="section-center">
-        {people.map((person, personIndex) => {
-          const { id, img, name, title, quote } = person;
-
-          let position = "nextSlide";
-          if (personIndex === index) {
-            position = "activeSlide";
-          }
-          if (
-            personIndex === index - 1 ||
-            (index === 0 && personIndex === people.length - 1)
-          ) {
-            position = "lastSlide";
-          }
-
-          return (
-            <article className={position} key={id}>
-              <img src={img} alt={name} className="person-img" />
-              <h4>{name}</h4>
-              <p className="title">{title}</p>
-              <p className="text">{quote}</p>
-              <FaQuoteRight className="icon" />
-            </article>
-          );
-        })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
-        </button>
-      </div>
-    </section>
+    <div>
+      {/* {image3} */}
+      <img src={image3} alt="" />
+      {tech.map((tec) => {
+        const { id, img, name, title, quote } = tec;
+        return (
+          <div key={id}>
+            <img src={img} alt="" />
+          </div>
+        );
+      })}
+    </div>
   );
 }
 

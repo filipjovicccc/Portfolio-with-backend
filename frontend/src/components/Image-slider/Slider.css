@@ -1,4 +1,4 @@
-.section {
+/* .section {
     width: 90vw;
     margin: 5rem auto;
     max-width: 1170px;
@@ -17,12 +17,12 @@
   .title span {
     font-size: 0.85em;
     /* color: rgb(58, 131, 198); */
-    color: rgba(0, 0, 0, 0.998);
+    /* color: rgba(0, 0, 0, 0.998);
     margin-right: 1rem;
     font-weight: 700;
-  }
+  } */
 
-  .section-center {
+  /* .section-center {
     margin: 0 auto;
     margin-top: 4rem;
     width: 80vw;
@@ -44,9 +44,9 @@
     box-shadow:rgba(0, 0, 0, 0.922);
   }
   article h4 {
-    text-transform: uppercase;
+    text-transform: uppercase; */
     /* color: rgb(58, 131, 198); */
-    color: rgba(0, 0, 0, 0.998);
+    /* color: rgba(0, 0, 0, 0.998);
     margin-bottom: 0.25rem;
   }
   .title {
@@ -65,9 +65,9 @@
     font-size: 3rem;
     margin-top: 1rem;
     /* color:rgb(58, 131, 198); */
-    color: rgba(0, 0, 0, 0.998);
-  }
-  .prev,
+    /* color: rgba(0, 0, 0, 0.998);
+  } */
+  /* .prev,
   .next {
     position: absolute;
     top: 200px;
@@ -84,10 +84,10 @@
     cursor: pointer;
     transition: all 0.3s linear;
   }
-  .prev:hover,
-  .next:hover {
+  .prev:hover, */
+  /* .next:hover {  */
     /* background: rgb(58, 131, 198); */
-    color: rgba(0, 0, 0, 0.998);
+    /* color: rgba(0, 0, 0, 0.998);
   }
   .prev {
     left: 0;
@@ -124,4 +124,4 @@
   }
   article.nextSlide {
     transform: translateX(100%);
-  }
+  }  */

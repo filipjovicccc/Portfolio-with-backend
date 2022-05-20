@@ -1,7 +1,9 @@
-const people = [
+import image1 from "../../assets/css.jpg";
+
+const tech = [
   {
     id: 1,
-    img: "../../assets/css.jpg",
+    img: { image1 },
     name: "maria ferguson",
     title: "office manager",
     quote:
@@ -33,4 +35,4 @@ const people = [
   },
 ];
 
-export default people;
+export default tech;
