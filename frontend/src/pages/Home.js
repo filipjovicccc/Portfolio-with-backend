@@ -6,7 +6,7 @@ import "./Home.css";
 function Home() {
   return (
     <div>
-      <main className="container">
+      <div className="container">
         <h1>F.J</h1>
         <div className="wrapp">
           <div className="article">
@@ -20,7 +20,7 @@ function Home() {
             <br />
           </p>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
